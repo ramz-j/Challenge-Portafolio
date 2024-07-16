@@ -42,13 +42,89 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px 5vw;
+    box-sizing: border-box;
+}
 
+.menu__header {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.menu nav, .menu__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu__header img {
+    display: flex;
+    align-self: center;
+}
+
+.menu__list {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.menu__list__item__contato {
+    align-self: center;
+    font-weight: 600;
+}
+
+.menu__list__item:hover, .menu__list__item__contato:hover {
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 /*Sección Title*/
 
 section.title{
+    
+}
 
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    padding: 16px 5vw;
+    gap: 15px;
+}
+
+.title__profile {
+    height: 368px;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+}
+
+.title__bio {
+    font-size: 52px;
+    color: #464646;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.title__subsection {
+    font-size: 22px;
+    color: #464646;
+    font-weight: 500;
+    
+}
+
+.title__network {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0px;
+    gap: 20px;
 }
 
 /*Sección About*/
@@ -57,16 +133,153 @@ section.about{
 
 }
 
+.about__container {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: content-box;
+    background-color: #EAF2FD;
+}
+
+.about__title {
+    padding: 16px 5vw;
+    width: 60vw;
+    font-size: 32px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.about__paragraph {
+    padding: 16px 5vw;
+    width: 60vw;
+    font-size: 16px;
+    font-weight: 300;
+    color: #464646;
+}
+
+.about__container img {
+    padding: 16px 5vw;
+    width: 140px;
+    height: 52px;
+}
+
+/*Sección Skills*/
+
+section.skills{
+    
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 15px;
+}
+
+.skills__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.skills__line {
+    display: flex;
+    gap: 16px;
+}
+
+.skills__box {
+    display: flex;
+    align-items: flex-end;
+    width: 176px;
+    height: 174px;
+    background-color: white;
+}
+
 /*Sección Hobbies*/
 
-section.hobbies{
-    
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hobbies__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.hobbies__line {
+    display: flex;
+    gap: 16px;
+}
+
+.hobbies__box {
+    display: flex;
+    align-items: flex-end;
+    width: 176px;
+    height: 174px;
+    background-color: white;
 }
 
 /* Experiencia Académica*/
 
 section.academic{
+    
+}
 
+.academic {
+    background-color: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.academic__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.academic__courses {
+    display: flex;
+    gap: 16px;
+    padding: 16px 5vw;
+}
+
+.academic__courses__list {
+    padding: 0px;
+}
+
+.academic__courses__item__img {
+    background-color: white;
+    width: 368px;
+    height: 347px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.academic__courses__item__img img {
+    width: 192px;
+    height: 130px;
+}
+
+.academic__courses__item__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.academic__courses__item__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #464646;
 }
 
 /* experiencia*/
@@ -75,10 +288,163 @@ section.experience{
 
 }
 
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 5vw;
+    gap: 60px;
+    
+}
+
+.experience__section__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #464646;
+    margin-bottom: 0px;
+}
+
+.experience__box {
+    display: flex;
+    gap: 15px;
+}
+
+.experience__box__two {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.experience__img {
+    width: 752px;
+    height: 406px;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    gap: 15px;
+}
+
+.experience__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #464646;
+    margin: 0px;
+}
+
+.experience__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #464646;
+    margin: 0px;
+}
+
+.experiencia__botao--repo {
+    width: 116px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    font-size: 16px;
+    color: #2A7AE4;
+    margin-right: 15px;
+}
+
+.experience__botao--demo {
+    width: 105px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    background-color: #2A7AE4;
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+
+}
+
 /*Contacto*/
 
 section.formcontato{
 
+}
+
+.formcontato {
+    background-color: #EAF2FD;
+    width: 100vw;
+}
+
+.formcontato__contacto {
+    display: flex;
+    padding: 100px 5vw 60px 5vw;
+    gap: 20px;
+    justify-content: center;
+}
+
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formcontato__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #464646;
+    margin: 0px 0px 10px;
+}
+
+.formcontato__subtext {
+    font-size: 16px;
+    font-weight: 500;
+    color: #464646;
+    margin: 10px 0px;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formcontato__input {
+    width: 656px;
+    height: 56px;
+    border: none;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(216, 216, 216);
+    padding-left: 10px;
+    
+}
+
+.formcontato__textarea {
+    height: 133px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(216, 216, 216);
+}
+
+.formcontato__botao {
+    width: 144px;
+    height: 51px;
+    border: none;
+    background-color: #2A7AE4;
+    color: white;
+
+}
+
+.footer__rodape {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer__rodape p {
+    margin: 5px;
 }
 
 /*footeer*/
